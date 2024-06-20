@@ -13,6 +13,7 @@ def send_message(topic, message):
 
 # Simulate sending messages
 for i in range(10):
+    i += 50
     message = {'id': i, 'value': f'Message {i}'}
-    send_message('topic-a', message)
+    send_message('topic', message)
     time.sleep(1)
